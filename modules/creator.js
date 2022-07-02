@@ -1,8 +1,8 @@
 export class Creator {
-    constructor(firstName,lastName,content) {
+    constructor(firstName,lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.content = content;
+        this.content = '';
         this.actions = [];
     }
 
@@ -27,7 +27,6 @@ export class Creator {
     printCreatorData() {
         return `
         First Name ${this.firstName}
-        Last Name ${this.lastName}
-        Content ${this.content}`;
+        Last Name ${this.lastName}`
     }
 };
